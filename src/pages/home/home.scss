@@ -1,0 +1,76 @@
+
+
+.homeadmin {
+    display: flex;
+    .homeContaineradmin {
+      flex: 8;
+      background-color: rgb(248, 249, 251);
+      .widgetsadmin {
+        display: flex;
+        margin: 34px 40px 34px;
+        gap: 34px;
+        max-height: 200px;
+      }
+      .chartsadmin {
+        display: flex;
+        margin: 34px 40px 34px;
+        gap: 34px;
+      }
+      .listContainer {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 20px;
+  
+        .listTitle {
+          font-weight: 600;
+          font-size: 16px;
+          color: #1d3354;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  
+  .avarage-star {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+  
+  $small: 400px;
+  $medium: 900px;
+  
+  @media screen and (max-width: $small) {
+    .listContainer {
+      display: none;
+    }
+  }
+  
+  .listTitle.dark {
+    color: #a5a5a5;
+  }
+  
+/* styles.scss */
+
+.container {
+  display: flex;
+  max-width: 100%; /* Maksimum genişlik */
+}
+
+.column-left,
+.column-right {
+  flex: 1; /* Eşit genişlik */
+  height: 500px;
+  max-width: 50%; /* Maksimum yüzde 50 genişlik */
+  padding: 0 10px; /* Opsiyonel kenar boşlukları */
+  box-sizing: border-box; /* Padding'i genişlik içinde hesaplamak için */
+}
+.column-left{
+  background-color: #a5a5a5;
+}
+.column-right{
+  background-color: antiquewhite;
+}
+
+

@@ -1,0 +1,82 @@
+/* styles.css */
+.phonebook {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 50%;
+  background-color: rgb(127, 170, 190);
+  height: calc(90vh - 40px); /* Pagination için tablo alanını ayırın */
+  position: relative; /* Tablo ile ilişkili pozisyonu koruyun */
+}
+
+.table {
+  width: 90%;
+  height: 100%;
+  margin: 15px auto;
+}
+
+.right {
+  width: 50%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 90vh;
+}
+
+.pagination {
+  position: absolute;
+  top: 450px; /* Tablo altında olacak şekilde ayarlayın */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pagination button {
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table td:nth-child(1) {
+  background-color: #ffffcc;
+}
+
+.table td:nth-child(2) {
+  background-color: #ffe6f2;
+}
+
+.table td:nth-child(3) {
+  background-color: #e6f2ff;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
